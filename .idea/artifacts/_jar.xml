@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="水果超市管理系统:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/_jar</output-path>
+    <root id="archive" name="水果超市管理系统.jar">
+      <element id="module-output" name="水果超市管理系统" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../JLayer1.0.1/jl1.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../mysql-connector-java-8.0.11/mysql-connector-java-8.0.11.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
