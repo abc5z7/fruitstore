@@ -12,6 +12,8 @@ public class GUITools {
         int x = (toolkit.getScreenSize().width - c.getWidth()) / 2;
         c.setLocation(x, y);
     }
+
+
     // 为指定窗口设置图标标题
     public static void setTitleImage(JFrame frame, String titleIconPath) {
         frame.setIconImage(toolkit.createImage(titleIconPath));

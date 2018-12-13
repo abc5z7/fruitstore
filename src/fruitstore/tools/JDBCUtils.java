@@ -16,6 +16,8 @@ public class JDBCUtils {
         Connection connection = DriverManager.getConnection(url, username, password);
         return connection;
     }
+
+
     // 关闭数据库连接，释放资源
     public static void release(Statement statement, Connection connection) {
         if (statement != null) {
@@ -23,27 +25,30 @@ public class JDBCUtils {
                 statement.close();
             } catch (SQLException e) {
                 e.printStackTrace();
-            }
+            } // try
             statement = null;
-        }
+        } // if
+
         if (connection != null) {
             try {
                 connection.close();
             } catch (SQLException e) {
                 e.printStackTrace();
-            }
+            } // try
             connection = null;
-        }
-    }
+        } // if
+    } // release
+
+
     public static void release(ResultSet resultSet, Statement statement, Connection connection) {
         if (resultSet != null) {
             try {
                 resultSet.close();
             } catch (SQLException e) {
                 e.printStackTrace();
-            }
+            } // try
             resultSet = null;
-        }
+        } // if
         release(statement, connection);
-    }
+    } // release
 }

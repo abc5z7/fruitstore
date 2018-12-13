@@ -16,9 +16,16 @@ public class AdminService {
         ArrayList<FruitItem> data = adminDao.queryAllData();
         // 返回数据
         return data;
-    }
+    } // queryFruitItem
+
+
     // 添加服务
     public boolean addFruitItem(String number, String name, String price, String unit) {
+
+        // 编号判空
+        if (number.equals("")) {
+            return false;
+        }
         // 调用Dao层的获取所有数据方法获取所有数据
         ArrayList<FruitItem> data = queryFruitItem();
         // 使用输入的编号与所有数据对比
@@ -34,7 +41,9 @@ public class AdminService {
         adminDao.addFruitItem(thisFruitItem);
         // 在添加数据后，返回添加成功
         return true;
-    }
+    } // addFruitItem
+
+
     // 修改服务
     public boolean updateFruitItem(String number, String name, String price, String unit) {
         // 调用Dao层的获取所有数据方法获取所有数据
@@ -55,7 +64,9 @@ public class AdminService {
         }
         // 如果不存在相同编号数据，则不可以更新
         return false;
-    }
+    } // updateFruitItem
+
+
     // 删除服务
     public boolean delFruitItem(String delNumber) {
         // 调用Dao层的获取所有数据方法获取所有数据
@@ -72,5 +83,5 @@ public class AdminService {
         }
         // 如果不存在相同编号数据，则不可以删除
         return false;
-    }
+    } // delFruitItem
 }

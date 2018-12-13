@@ -4,6 +4,7 @@ import fruitstore.tools.GUITools;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 
 
 /**
@@ -33,6 +34,8 @@ public abstract class AbstractAdminDialog extends JDialog {
     // 删除功能组件
     protected JTextField delNumberText = new JTextField(6);     // 添加编号文本
     private JButton delBtn = new JButton("删除水果");       // 删除按钮
+    // 帮助文档组件
+    private JButton helpBtn = new JButton("帮助文档");
     // 构造方法
     public AbstractAdminDialog() {
         this(null, true);
@@ -101,6 +104,9 @@ public abstract class AbstractAdminDialog extends JDialog {
         this.add(delNumberText);
         delBtn.setBounds(460, 340, 90, 25);
         this.add(delBtn);
+        // 帮助文档组件
+        helpBtn.setBounds(350, 340, 90, 25);
+        this.add(helpBtn);
     }
     // 添加监听器
     private void addListener() {
@@ -118,12 +124,20 @@ public abstract class AbstractAdminDialog extends JDialog {
             // 调用删除方法
             delFruitItem();
         });
+        helpBtn.addActionListener(e -> {
+            // 调用帮助文档方法
+            try {
+                helpDocument();
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
+        });
     }
 
     public abstract void queryFruitItem();      // 查询方法
     public abstract void addFruitItem();        // 添加方法
     public abstract void updateFruitItem();     // 修改方法
     public abstract void delFruitItem();        // 删除方法
-
+    public abstract void helpDocument() throws IOException;        // 帮助文档方法
 
 }

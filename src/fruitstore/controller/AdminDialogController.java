@@ -8,6 +8,8 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -27,6 +29,8 @@ public class AdminDialogController extends AbstractAdminDialog {
         // 创建对象时展示数据
         queryFruitItem();
     }
+
+
     // 查询方法
     @Override
     public void queryFruitItem() {
@@ -39,7 +43,9 @@ public class AdminDialogController extends AbstractAdminDialog {
         // 将查询到的结果为table赋值
         TableModel dataModel = new DefaultTableModel(tbody, thead);
         table.setModel(dataModel);
-    }
+    } // queryFruitItem
+
+
     private String[][] list2Array(ArrayList<FruitItem> list) {
         // 根据FruitItem的model与集合数据定义JTable的数据二维数组
         String[][] tbody = new String[list.size()][4];
@@ -51,7 +57,9 @@ public class AdminDialogController extends AbstractAdminDialog {
             tbody[i][3] = fruitItem.getUnit();
         }
         return tbody;
-    }
+    } // list2Array
+
+
     // 添加方法
     @Override
     public void addFruitItem() {
@@ -73,9 +81,11 @@ public class AdminDialogController extends AbstractAdminDialog {
             addUnitText.setText("");
         } else {
             // 没有添加成功弹窗错误提示
-            JOptionPane.showMessageDialog(this, "水果编号不能重复，请检查数据！");
+            JOptionPane.showMessageDialog(this, "水果编号不能为空或重复，请检查数据！");
         }
-    }
+    } // addFruitItem
+
+
     // 修改方法
     @Override
     public void updateFruitItem() {
@@ -99,7 +109,9 @@ public class AdminDialogController extends AbstractAdminDialog {
             // 没有修改成功弹窗错误
             JOptionPane.showMessageDialog(this, "没有这个编号的水果，请检查数据！");
         }
-    }
+    } // updateFruitItem
+
+
     // 删除方法
     @Override
     public void delFruitItem() {
@@ -117,5 +129,12 @@ public class AdminDialogController extends AbstractAdminDialog {
             // 没有删除成功弹窗错误提示
             JOptionPane.showMessageDialog(this, "没有这个编号的水果，请检查数据！");
         }
+    } // delFruitItem
+
+
+    // 帮助文档方法
+    @Override
+    public void helpDocument() throws IOException {
+        Desktop.getDesktop().open(new File("./doc/HelpDocument.txt"));
     }
 }

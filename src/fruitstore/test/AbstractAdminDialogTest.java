@@ -32,6 +32,9 @@ public class AbstractAdminDialogTest extends AbstractAdminDialog {
     @Override
     public void delFruitItem() {
     }
+    @Override
+    public void helpDocument() {
+    }
     // 定义主函数运行程序
     public static void main(String[] agrs) {
         new AbstractAdminDialogTest().setVisible(true);

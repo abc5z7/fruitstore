@@ -19,8 +19,8 @@ public class FruitItem {
         this.price = price;
         this.unit = unit;
     }
-    // get/set方法
 
+    // get/set方法
     public String getNumber() {
         return number;
     }

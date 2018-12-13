@@ -44,12 +44,13 @@ public class AdminDao {
             JDBCUtils.release(resultSet, statement, connection);
         }
         return null;
-    }
+    } // queryAddData
+
+
     // 添加数据
     public void addFruitItem(FruitItem fruitItem) {
         Connection connection = null;
         Statement statement = null;
-//        ResultSet resultSet = null;
         try {
             // 获取数据的连接
             connection = JDBCUtils.getConnection();
@@ -69,12 +70,13 @@ public class AdminDao {
         } finally {
             JDBCUtils.release(statement, connection);
         }
-    }
+    } //addFruitItem
+
+
     // 删除数据
     public void delFruitItem(String delNumber) {
         Connection connection = null;
         Statement statement = null;
-//        ResultSet resultSet = null;
         try {
             // 获得数据的对象
             connection = JDBCUtils.getConnection();
@@ -90,14 +92,15 @@ public class AdminDao {
             e.printStackTrace();
         } finally {
             JDBCUtils.release(statement, connection);
-        }
+        } // try
+
         // 查询集合中数据
         for (int i = 0; i < DataBase.data.size(); i++) {
             FruitItem thisFruitItem = DataBase.data.get(i);
             // 如果有水果项的标号与传入编号相同，则从集合中删除
             if (thisFruitItem.getNumber().equals(delNumber)) {
                 DataBase.data.remove(i);
-            }
-        }
-    }
+            } // if
+        } // for
+    } // delFruitItem
 }
