@@ -6,16 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a17d0279-5557-487a-a1cb-0656ea64c712" name="Default" comment="第二次更新">
-      <change afterPath="$PROJECT_DIR$/src/fruitstore/domain/UserItem.java" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Caches/IntelliJIdea2018.3/workspace/水果超市管理系统.2a1b633e.xml" afterDir="false" />
+    <list default="true" id="a17d0279-5557-487a-a1cb-0656ea64c712" name="Default" comment="第四次更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/HelpDocument.txt" beforeDir="false" afterPath="$PROJECT_DIR$/doc/HelpDocument.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fruitstore/controller/MainFrameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fruitstore/controller/MainFrameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fruitstore/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fruitstore/dao/AdminDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fruitstore/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fruitstore/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fruitstore/test/AbstractMainFrameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fruitstore/test/AbstractMainFrameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fruitstore/view/AbstractMainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fruitstore/view/AbstractMainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +58,20 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="210">
+                <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,7 +112,6 @@
         <option value="$PROJECT_DIR$/src/fruitstore/domain/FruitItem.java" />
         <option value="$PROJECT_DIR$/src/fruitstore/tools/GUITools.java" />
         <option value="$PROJECT_DIR$/src/fruitstore/tools/JDBCUtils.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/fruitstore/domain/UserItem.java" />
         <option value="$PROJECT_DIR$/src/fruitstore/dao/AdminDao.java" />
@@ -115,6 +120,7 @@
         <option value="$PROJECT_DIR$/src/fruitstore/test/AbstractMainFrameTest.java" />
         <option value="$PROJECT_DIR$/src/fruitstore/view/AbstractMainFrame.java" />
         <option value="$PROJECT_DIR$/doc/HelpDocument.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -132,8 +138,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1846" />
-    <option name="y" value="123" />
+    <option name="x" value="1710" />
+    <option name="y" value="110" />
     <option name="width" value="1400" />
     <option name="height" value="759" />
   </component>
@@ -186,7 +192,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588987855537" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588993305969" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -336,12 +342,20 @@
       <workItem from="1545565613460" duration="137000" />
       <workItem from="1545962254487" duration="1739000" />
       <workItem from="1546565222003" duration="3397000" />
-      <workItem from="1588920545408" duration="9868000" />
+      <workItem from="1588920545408" duration="10908000" />
     </task>
+    <task id="LOCAL-00001" summary="第四次更新">
+      <created>1588993690383</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588993690383</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85755000" />
+    <option name="totallyTimeSpent" value="86795000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -353,11 +367,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1846" y="123" width="1400" height="759" extended-state="0" />
+    <frame x="1710" y="110" width="1400" height="759" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49213484" weight="0.31296024" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4899329" visible="true" weight="0.31296024" />
       <window_info id="Structure" order="1" weight="0.2496318" />
-      <window_info id="Persistence" order="2" sideWeight="0.5078652" side_tool="true" weight="0.2496318" />
+      <window_info id="Persistence" order="2" sideWeight="0.5100671" side_tool="true" weight="0.31296024" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -371,7 +386,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298351" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4992636" weight="0.3298351" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4992636" visible="true" weight="0.3298351" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32833582" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49852726" weight="0.3298351" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50073636" side_tool="true" weight="0.3298351" />
@@ -446,6 +461,7 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="SHOW_ROOT_NAMES" value="true" />
               <option name="RECENTLY_FILTERED_USER_GROUPS">
                 <collection />
               </option>
@@ -499,7 +515,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="第二次更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二次更新" />
+    <MESSAGE value="第四次更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="第四次更新" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -846,16 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fruitstore/tools/JDBCUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -998,6 +1005,16 @@
             <element signature="e#593#594#0" expanded="true" />
             <element signature="e#616#617#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
