@@ -15,4 +15,8 @@ public class AbstractMainFrameTest extends AbstractMainFrame {
     public void showAdminDialog() {
         System.out.println("进入管理界面");
     }
+    @Override
+    public void login() {
+        System.out.println("登录");
+    }
 }

@@ -2,6 +2,7 @@ package fruitstore.dao;
 
 import fruitstore.data.DataBase;
 import fruitstore.domain.FruitItem;
+import fruitstore.domain.UserItem;
 import fruitstore.tools.JDBCUtils;
 
 import java.sql.Connection;
@@ -103,4 +104,35 @@ public class AdminDao {
             } // if
         } // for
     } // delFruitItem
+
+
+    public ArrayList<UserItem> queryAllUser() {
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+        ArrayList<UserItem> list = new ArrayList<>();
+        try {
+            // 获得数据的连接
+            connection = JDBCUtils.getConnection();
+            // 获得Statement对象
+            statement = connection.createStatement();
+            // 发送SQL语句
+            String sql = "SELECT * FROM user";
+            resultSet = statement.executeQuery(sql);
+            // 处理结果集
+            while (resultSet.next()) {
+                FruitItem fruitItem = new FruitItem();
+                UserItem userItem = new UserItem();
+                userItem.setUsername(resultSet.getString("username"));
+                userItem.setPwd(resultSet.getString("password"));
+                list.add(userItem);
+            }
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            JDBCUtils.release(resultSet, statement, connection);
+        }
+        return null;
+    }
 }

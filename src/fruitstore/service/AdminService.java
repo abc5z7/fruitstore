@@ -2,6 +2,7 @@ package fruitstore.service;
 
 import fruitstore.dao.AdminDao;
 import fruitstore.domain.FruitItem;
+import fruitstore.domain.UserItem;
 
 import java.util.ArrayList;
 
@@ -84,4 +85,21 @@ public class AdminService {
         // 如果不存在相同编号数据，则不可以删除
         return false;
     } // delFruitItem
+
+    public ArrayList<UserItem> queryUserItem() {
+        // 调用Dao层的获取所有数据方法所有数据
+        ArrayList<UserItem> data = adminDao.queryAllUser();
+        // 返回数据
+        return data;
+    } // queryFruitItem
+
+    public  boolean login(String username, String pwd) {
+        ArrayList<UserItem> data = queryUserItem();
+        for (UserItem userItem: data) {
+            if (username.equals(userItem.getUsername()) && pwd.equals(userItem.getPwd())){
+                return true;
+            }
+        }
+        return false;
+    }
 }
